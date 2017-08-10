@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>tech.simter</groupId>
+    <artifactId>simter-parent</artifactId>
+    <version>0.3-SNAPSHOT</version>
+    <relativePath/>
+  </parent>
+  <artifactId>simter-id-data-jdbc</artifactId>
+  <name>simter-id-data-jdbc</name>
+  <packaging>jar</packaging>
+  <description>id server data implements by pure jdbc</description>
+  <dependencies>
+    <!-- Simter -->
+    <dependency>
+      <groupId>tech.simter</groupId>
+      <artifactId>simter-id-data</artifactId>
+    </dependency>
+
+    <!-- Third Party -->
+    <dependency>
+      <groupId>javax.inject</groupId>
+      <artifactId>javax.inject</artifactId>
+    </dependency>
+
+    <!-- Test -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <url>https://github.com/simter/simter-id</url>
+  <licenses>
+    <license>
+      <name>gftaxi</name>
+      <url>https://git.oschina.net/gftaxi/licenses</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/simter/simter-id</url>
+  </scm>
+  <organization>
+    <name>simter</name>
+    <url>https://github.com/simter/</url>
+  </organization>
+  <developers>
+    <developer>
+      <name>RJ.Hwang</name>
+      <email>rongjihuang@gmail.com</email>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/simter/simter-id/issues</url>
+  </issueManagement>
+</project>
