@@ -39,5 +39,6 @@
   <modules>
     <module>simter-id-data</module>
     <module>simter-id-data-jdbc</module>
+    <module>simter-id-data-jpa</module>
   </modules>
 </project>
