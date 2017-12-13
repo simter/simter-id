@@ -4,10 +4,11 @@
   <parent>
     <groupId>tech.simter</groupId>
     <artifactId>simter-parent</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.3.0</version>
     <relativePath/>
   </parent>
   <artifactId>simter-id-data</artifactId>
+  <version>0.3.0</version>
   <name>simter-id-data</name>
   <packaging>jar</packaging>
   <description>id server data</description>
