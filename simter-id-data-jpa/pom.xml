@@ -4,13 +4,13 @@
   <parent>
     <groupId>tech.simter</groupId>
     <artifactId>simter-parent</artifactId>
-    <version>0.3-SNAPSHOT</version>
-    <relativePath/>
+    <version>${revision}</version>
+    <relativePath>../../simter-parent</relativePath>
   </parent>
   <artifactId>simter-id-data-jpa</artifactId>
-  <name>simter-id-data-jpa</name>
   <packaging>jar</packaging>
-  <description>id server data implements by jpa</description>
+  <name>simter-id-data-jpa</name>
+  <description>Simter Id Data Jpa Implementation</description>
   <dependencies>
     <!-- Simter -->
     <dependency>

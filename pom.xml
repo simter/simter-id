@@ -3,14 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>tech.simter</groupId>
-    <artifactId>simter-parent</artifactId>
-    <version>0.3-SNAPSHOT</version>
-    <relativePath/>
+    <artifactId>simter-build</artifactId>
+    <version>${revision}</version>
+    <relativePath>..</relativePath>
   </parent>
   <artifactId>simter-id</artifactId>
   <packaging>pom</packaging>
   <name>simter-id</name>
-  <description>A simple file server</description>
+  <description>Simter Id</description>
   <url>https://github.com/simter/simter-id</url>
   <licenses>
     <license>
@@ -28,7 +28,7 @@
   </organization>
   <developers>
     <developer>
-      <name>RJ Hwang</name>
+      <name>RJ.Hwang</name>
       <email>rongjihuang@gmail.com</email>
     </developer>
   </developers>
