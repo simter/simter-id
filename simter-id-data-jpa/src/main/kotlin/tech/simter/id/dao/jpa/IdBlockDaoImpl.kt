@@ -23,7 +23,7 @@ internal class IdBlockDaoImpl @Autowired constructor(
     // get the current value
     var value: Long?
     try {
-      value = em.createQuery("select v from IdHolder where t = :type", Long::class.javaObjectType)
+      value = em.createQuery("select i.v from IdHolder i where i.t = :type", Long::class.javaObjectType)
         .setParameter("type", t)
         .singleResult
     } catch (e: NoResultException) {
@@ -36,8 +36,8 @@ internal class IdBlockDaoImpl @Autowired constructor(
       em.persist(id)
     } else {              // add 1
       value++
-      val count = em.createQuery("update IdHolder set v = v + 1 where t = :type")
-        .setParameter("t", t).executeUpdate()
+      val count = em.createQuery("update IdHolder i set i.v = i.v + 1 where i.t = :type")
+        .setParameter("type", t).executeUpdate()
       if (count != 1) throw SecurityException("Failed to increase id value for type '$t'")
     }
 
