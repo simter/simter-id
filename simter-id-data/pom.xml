@@ -2,26 +2,38 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>tech.simter</groupId>
-    <artifactId>simter-parent</artifactId>
+    <groupId>tech.simter.id</groupId>
+    <artifactId>simter-id-parent</artifactId>
     <version>${revision}</version>
-    <relativePath>../../simter-parent</relativePath>
+    <relativePath>../simter-id-parent</relativePath>
   </parent>
   <artifactId>simter-id-data</artifactId>
   <packaging>jar</packaging>
-  <name>simter-id-data</name>
-  <description>Simter Id Data</description>
+  <description>Data API</description>
+  <developers>
+    <developer>
+      <name>RJ.Hwang</name>
+      <email>rongjihuang@gmail.com</email>
+    </developer>
+  </developers>
   <dependencies>
-    <!-- Simter -->
     <dependency>
-      <groupId>tech.simter</groupId>
-      <artifactId>simter-core</artifactId>
+      <groupId>tech.simter.reactive</groupId>
+      <artifactId>simter-reactive-security</artifactId>
     </dependency>
-
-    <!-- Third Party -->
     <dependency>
-      <groupId>javax.inject</groupId>
-      <artifactId>javax.inject</artifactId>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-commons</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-relational</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-mongodb</artifactId>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>javax.persistence</groupId>
@@ -29,50 +41,17 @@
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>javax.transaction</groupId>
-      <artifactId>javax.transaction-api</artifactId>
+      <groupId>io.projectreactor</groupId>
+      <artifactId>reactor-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.interceptor</groupId>
-      <artifactId>javax.interceptor-api</artifactId>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot</artifactId>
       <optional>true</optional>
     </dependency>
-
-    <!-- Test -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-core</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
-  <url>https://github.com/simter/simter-id</url>
-  <licenses>
-    <license>
-      <name>gftaxi</name>
-      <url>https://git.oschina.net/gftaxi/licenses</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  <scm>
-    <url>https://github.com/simter/simter-id</url>
-  </scm>
-  <organization>
-    <name>simter</name>
-    <url>https://github.com/simter/</url>
-  </organization>
-  <developers>
-    <developer>
-      <name>RJ.Hwang</name>
-      <email>rongjihuang@gmail.com</email>
-    </developer>
-  </developers>
-  <issueManagement>
-    <system>Github</system>
-    <url>https://github.com/simter/simter-id/issues</url>
-  </issueManagement>
 </project>

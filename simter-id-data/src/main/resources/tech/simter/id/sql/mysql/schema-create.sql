@@ -1,7 +1,5 @@
-create table id_holder (
-  type  varchar(100) primary key,
-  value bigint not null
-);
-comment on table id_holder is 'ID Holder';
-comment on column id_holder.type is 'The type';
-comment on column id_holder.value is 'The current value';
+create table st_id (
+  t varchar(100) comment 'ID Type',
+  v bigint not null comment 'Current value',
+  primary key (k)
+) comment = 'ID Holder';

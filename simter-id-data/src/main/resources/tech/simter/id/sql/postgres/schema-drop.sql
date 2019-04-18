@@ -1,1 +1,1 @@
-drop table if exists id_holder;
+drop table if exists st_id;
