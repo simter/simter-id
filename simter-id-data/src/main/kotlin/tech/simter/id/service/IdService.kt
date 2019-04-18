@@ -43,17 +43,14 @@ interface IdService {
    * @param[dateTimeFormatter] the [DateTimeFormatter] for format current datetime, default is [FORMATTER_yyyyMMdd]
    * @return the next SN
    */
-  fun nextSN(t: String,
-             snFormatter: NumberFormat = FORMATTER_SN5,
+  fun nextSN(t: String, snFormatter: NumberFormat = FORMATTER_SN5,
              dateTimeFormatter: DateTimeFormatter = FORMATTER_yyyyMMdd): Mono<String> {
-    // date time string
+    // current date time string
     val date = LocalDateTime.now().format(dateTimeFormatter)
 
-    // next id string
-    val nextId = nextLong("$t$SEPARATOR$date")
-
-    // date+sn
-    return Mono.just(date + snFormatter.format(nextId))
+    // return
+    return nextLong("$t$SEPARATOR$date")  // next id
+      .map { date + snFormatter.format(it) } // date + sn
   }
 
   /** Get the next daily serial number with format `yyyyMMdd##` */

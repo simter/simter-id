@@ -1,9 +1,13 @@
 package tech.simter.id.service
 
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono
+import tech.simter.id.OPERATION_NEXT
+import tech.simter.id.PACKAGE
 import tech.simter.id.dao.IdDao
+import tech.simter.reactive.security.ModuleAuthorizer
 
 /**
  * The ID service implementation.
@@ -12,9 +16,13 @@ import tech.simter.id.dao.IdDao
  */
 @Service
 class IdServiceImpl @Autowired constructor(
+  @Qualifier("$PACKAGE.service.ModuleAuthorizer")
+  private val moduleAuthorizer: ModuleAuthorizer,
   private val dao: IdDao
 ) : IdService {
   override fun nextLong(t: String): Mono<Long> {
-    return dao.nextLong(t)
+    return moduleAuthorizer
+      .verifyHasPermission(OPERATION_NEXT)
+      .then(dao.nextLong(t))
   }
 }

@@ -5,3 +5,6 @@ const val PACKAGE = "tech.simter.id"
 
 /** Entities table name */
 const val TABLE_ID = "st_id"
+
+/** The operation name */
+const val OPERATION_NEXT = "NEXT"
