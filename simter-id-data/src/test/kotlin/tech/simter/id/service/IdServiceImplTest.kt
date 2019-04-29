@@ -10,13 +10,7 @@ import reactor.core.publisher.Mono
 import reactor.test.test
 import tech.simter.id.OPERATION_NEXT
 import tech.simter.id.dao.IdDao
-import tech.simter.id.service.IdService.Companion.FORMATTER_SN2
-import tech.simter.id.service.IdService.Companion.FORMATTER_SN3
-import tech.simter.id.service.IdService.Companion.FORMATTER_SN4
-import tech.simter.id.service.IdService.Companion.FORMATTER_SN5
-import tech.simter.id.service.IdService.Companion.FORMATTER_yyyy
-import tech.simter.id.service.IdService.Companion.FORMATTER_yyyyMM
-import tech.simter.id.service.IdService.Companion.FORMATTER_yyyyMMdd
+import tech.simter.id.service.IdService.*
 import tech.simter.reactive.security.ModuleAuthorizer
 import java.text.NumberFormat
 import java.time.LocalDate
@@ -62,7 +56,7 @@ class IdServiceImplTest @Autowired constructor(
   }
 
   @Test
-  fun `nextSN - default`() = testNextSN(FORMATTER_yyyyMMdd, FORMATTER_SN5) { service.nextSN(it) }
+  fun `nextSN - default`() = testNextSN(FORMATTER_yyyyMMdd, FORMATTER_SN5) { service.nextSN(it, FORMATTER_SN5, FORMATTER_yyyyMMdd) }
 
   @Test
   fun `nextDailySN2 - default`() = testNextSN(FORMATTER_yyyyMMdd, FORMATTER_SN2) { service.nextDailySN2(it) }
