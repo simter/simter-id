@@ -1,5 +1,14 @@
 # [simter-id](https://github.com/simter/simter-id) changelog
 
+## 0.8.0-M2 - 2019-05-11
+
+- Upgrade to simter-1.2.0-M5
+- Add IdGenerator interface
+- Add UUID implementation of IdGenerator
+- Add snowflake implementation of IdGenerator
+- Add type-id implementation of IdGenerator
+- Convert interface to java
+
 ## 0.8.0-M1 - 2019-04-29
 
 - Upgrade to simter-1.2.0-M4
