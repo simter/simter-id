@@ -1,5 +1,15 @@
 # [simter-id](https://github.com/simter/simter-id) changelog
 
+## 0.8.0-M1 - 2019-04-29
+
+- Upgrade to simter-1.2.0-M4
+- Convert to kotlin project and convert service/dao interface to reactive
+- Delete simter-id-data-jdbc
+- Add simter-id-bom
+- Add simter-id-parent
+- Add simter-id-data-jpa
+- Add ModuleAuthorizer for role management
+
 ## 0.7.0 - 2018-12-03
 
 - Upgrade to jpa-2.2
