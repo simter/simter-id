@@ -1,4 +1,4 @@
-package tech.simter.id.generator;
+package tech.simter.id
 
 /**
  * An id generator interface.
@@ -6,9 +6,9 @@ package tech.simter.id.generator;
  * @param <R> the id type
  * @author RJ
  */
-public interface IdGenerator<R> {
+interface IdGenerator<R> {
   /**
    * Generate a next id.
    */
-  R nextId();
+  fun nextId(): R
 }
