@@ -18,6 +18,10 @@
     <revision>0.8-SNAPSHOT</revision>
     <simter-id.version>${revision}</simter-id.version>
     <simter-dependencies.version>1.2.0-M6</simter-dependencies.version>
+    <spring.version>${spring.milestone.version}</spring.version>
+    <spring-boot.version>${spring-boot.milestone.version}</spring-boot.version>
+    <reactor.version>${reactor.milestone.version}</reactor.version>
+    <reactor-kotlin-extensions.version>1.0.0.M1</reactor-kotlin-extensions.version>
   </properties>
   <modules>
     <module>simter-id-bom</module>
@@ -26,24 +30,6 @@
     <module>simter-id-dao-jpa</module>
   </modules>
   <build>
-    <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-    <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.jetbrains.kotlin</groupId>
-          <artifactId>kotlin-maven-plugin</artifactId>
-          <configuration>
-            <compilerPlugins>
-              <!-- Spring support: https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support -->
-              <plugin>spring</plugin>
-              <!-- JPA support: https://kotlinlang.org/docs/reference/compiler-plugins.html#jpa-support -->
-              <plugin>jpa</plugin>
-            </compilerPlugins>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
