@@ -22,8 +22,8 @@
   <modules>
     <module>simter-id-bom</module>
     <module>simter-id-parent</module>
-    <module>simter-id-data</module>
-    <module>simter-id-data-jpa</module>
+    <module>simter-id-core</module>
+    <module>simter-id-dao-jpa</module>
   </modules>
   <build>
     <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>

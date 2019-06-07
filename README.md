@@ -1,4 +1,6 @@
-# Simter ID Modules
+# simter-id
+
+Simter ID Manager.
 
 ## Data Structure
 
@@ -22,16 +24,16 @@
 
 ## Maven Modules
 
-| Sn | Name                          | Type | Parent                 | Remark
-|----|-------------------------------|------|------------------------|--------
-| 1  | [simter-id]                   | pom  | [simter-build]         | Build these modules and define global properties and pluginManagement
-| 2  | simter-id-bom                 | pom  | simter-id              | Bom of these modules
-| 3  | simter-id-parent              | pom  | simter-id              | Define global dependencies and plugins
-| 4  | simter-id-data                | jar  | simter-id-parent       | Service and Dao Interfaces
-| 5  | simter-id-data-reactive-mongo | jar  | simter-id-parent       | Dao Implementation By Reactive MongoDB
-| 6  | simter-id-data-jpa            | jar  | simter-id-parent       | Dao Implementation By JPA
-| 7  | simter-id-rest-webflux        | jar  | simter-id-parent       | Rest API By WebFlux
-| 8  | simter-id-starter             | jar  | simter-id-parent       | Microservice Starter
+| Sn | Name                   | Type | Parent           | Remark
+|----|------------------------|------|------------------|--------
+| 1  | [simter-operation]     | pom  | [simter-build]   | Build these modules and define global properties and pluginManagement
+| 2  | simter-id-bom          | pom  | simter-id        | Bom
+| 3  | simter-id-parent       | pom  | simter-id        | Define global dependencies and plugins
+| 4  | simter-id-core         | jar  | simter-id-parent | Core API: [IdHolder], [IdDao] and [IdService]
+| 5  | simter-id-dao-mongo    | jar  | simter-id-parent | [IdDao] Implementation By Reactive MongoDB
+| 6  | simter-id-dao-jpa      | jar  | simter-id-parent | [IdDao] Implementation By R2DBC
+| 7  | simter-id-rest-webflux | jar  | simter-id-parent | [IdDao] Implementation By JPA
+| 8  | simter-id-starter      | jar  | simter-id-parent | Microservice Starter
 
 ## Requirement
 
@@ -43,5 +45,9 @@
 - Reactor 3.2+
 
 
-[simter-build]: https://github.com/simter/simter-build/tree/master
+[simter-build]: https://github.com/simter/simter-build
 [simter-id]: https://github.com/simter/simter-id
+[IdHolder]: https://github.com/simter/simter-id/blob/master/simter-id-core/src/main/kotlin/tech/simter/id/core/IdHolder.kt
+[IdDao]: https://github.com/simter/simter-id/blob/master/simter-id-core/src/main/kotlin/tech/simter/id/core/IdDao.kt
+[IdService]: https://github.com/simter/simter-id/blob/master/simter-id-core/src/main/kotlin/tech/simter/id/core/IdService.kt
+[Rest API]: ./docs/rest-api.md

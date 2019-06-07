@@ -7,7 +7,7 @@
     <version>${revision}</version>
     <relativePath>../simter-id-parent</relativePath>
   </parent>
-  <artifactId>simter-id-data-jpa</artifactId>
+  <artifactId>simter-id-dao-jpa</artifactId>
   <packaging>jar</packaging>
   <description>Dao Implementation By JPA</description>
   <developers>
@@ -46,7 +46,7 @@
     </dependency>
     <dependency>
       <groupId>tech.simter.id</groupId>
-      <artifactId>simter-id-data</artifactId>
+      <artifactId>simter-id-core</artifactId>
     </dependency>
     <dependency>
       <groupId>tech.simter</groupId>

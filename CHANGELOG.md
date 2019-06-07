@@ -1,4 +1,4 @@
-# [simter-id](https://github.com/simter/simter-id) changelog
+# simter-id changelog
 
 ## 0.8.0-M2 - 2019-05-11
 

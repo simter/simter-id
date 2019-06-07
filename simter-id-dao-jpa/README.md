@@ -1,4 +1,4 @@
-# simter-id-data-jpa
+# simter-id-dao-jpa
 
 ## JPA Provider
 

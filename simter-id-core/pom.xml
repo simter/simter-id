@@ -7,7 +7,7 @@
     <version>${revision}</version>
     <relativePath>../simter-id-parent</relativePath>
   </parent>
-  <artifactId>simter-id-data</artifactId>
+  <artifactId>simter-id-core</artifactId>
   <packaging>jar</packaging>
   <description>Data API</description>
   <developers>
