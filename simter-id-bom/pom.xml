@@ -20,12 +20,12 @@
     <dependencies>
       <dependency>
         <groupId>tech.simter.id</groupId>
-        <artifactId>simter-id-data</artifactId>
+        <artifactId>simter-id-core</artifactId>
         <version>${simter-id.version}</version>
       </dependency>
       <dependency>
         <groupId>tech.simter.id</groupId>
-        <artifactId>simter-id-data-jpa</artifactId>
+        <artifactId>simter-id-dao-jpa</artifactId>
         <version>${simter-id.version}</version>
       </dependency>
     </dependencies>
