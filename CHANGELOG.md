@@ -1,5 +1,13 @@
 # simter-id changelog
 
+## 0.8.0-M3 - 2019-06-10
+
+- Upgrade to simter-1.2.0-M6
+- Refactor module structure to make core api simplify and clear [#6](https://github.com/simter/simter-id/issues/6)
+- Revert "Convert interface to java"
+- Convert all java code to kotlin
+- Config kotlin-maven-plugin only compile kotlin code
+
 ## 0.8.0-M2 - 2019-05-11
 
 - Upgrade to simter-1.2.0-M5
