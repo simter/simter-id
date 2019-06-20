@@ -13,6 +13,6 @@ logging:
     #---- mongo ----#
     #org.springframework.boot.autoconfigure.mongo: INFO
     #org.springframework.data.mongodb: DEBUG
-    #org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG # debug to show query
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG # debug to show query
     #org.springframework.data.mongodb.core.mapping.event.LoggingEventListener: INFO # use with LoggingEventListener bean
     #de.flapdoodle.embed: DEBUG # embedded mongo
