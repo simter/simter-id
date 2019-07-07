@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>tech.simter</groupId>
     <artifactId>simter-build</artifactId>
-    <version>1.2.0-M6</version>
+    <version>1.2.0</version>
     <!-- lookup parent from repository -->
     <relativePath/>
   </parent>
@@ -17,11 +18,7 @@
   <properties>
     <revision>0.8-SNAPSHOT</revision>
     <simter-id.version>${revision}</simter-id.version>
-    <simter-dependencies.version>1.2.0-M6</simter-dependencies.version>
-    <spring.version>${spring.milestone.version}</spring.version>
-    <spring-boot.version>${spring-boot.milestone.version}</spring-boot.version>
-    <reactor.version>${reactor.milestone.version}</reactor.version>
-    <reactor-kotlin-extensions.version>1.0.0.M1</reactor-kotlin-extensions.version>
+    <simter-dependencies.version>1.2.0</simter-dependencies.version>
   </properties>
   <modules>
     <module>simter-id-bom</module>
@@ -55,6 +52,12 @@
                 <parent>resolve</parent>
                 <modules>remove</modules>
                 <properties>interpolate</properties>
+                <dependencyManagement>keep</dependencyManagement>
+                <dependencies>keep</dependencies>
+                <pluginManagement>keep</pluginManagement>
+                <name>resolve</name>
+                <description>resolve</description>
+                <profiles>remove</profiles>
               </pomElements>
             </configuration>
           </execution>

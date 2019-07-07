@@ -59,10 +59,10 @@ mvn test -D db.name=testdb
 ## Maven Profiles:
 
 | SN | Name              | Type               | Default | Supported |
-|----|-------------------|--------------------|---------|:---------:|
-|  1 | jpa-hibernate     | JPA Implementation | true    |    √     |
+|----|-------------------|--------------------|:-------:|:---------:|
+|  1 | jpa-hibernate     | JPA Implementation |   √    |    √     |
 |  2 | jpa-eclipselink   | JPA Implementation |         |    √     |
-|  3 | embedded-h2       | Embedded Database  | true    |    √     |
+|  3 | embedded-h2       | Embedded Database  |   √    |    √     |
 |  4 | embedded-hsql     | Embedded Database  |         |    √     |
 |  5 | embedded-derby    | Embedded Database  |         |    √     |
 |  6 | embedded-postgres | Embedded Database  |         |    √     |
