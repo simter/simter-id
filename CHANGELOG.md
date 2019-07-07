@@ -1,5 +1,12 @@
 # simter-id changelog
 
+## 0.8.0 - 2019-07-07
+
+- Upgrade to simter-1.2.0
+- Use stable spring version on main branch
+- Polishing pom.xml for [deploy to JCenter](https://jcenter.bintray.com/tech/simter/id)
+- Add pom.xml header line `<?xml version="1.0" encoding="UTF-8"?>`
+
 ## 0.8.0-M3 - 2019-06-10
 
 - Upgrade to simter-1.2.0-M6
