@@ -6,13 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig
 import reactor.core.publisher.Flux
 import reactor.core.scheduler.Schedulers
-import reactor.kotlin.test.test
+import reactor.test.test
 import tech.simter.id.core.IdDao
 import tech.simter.id.impl.dao.jpa.TestHelper.randomIdHolder
 import tech.simter.reactive.jpa.ReactiveEntityManager
 import tech.simter.reactive.test.jpa.ReactiveDataJpaTest
 import tech.simter.util.RandomUtils.randomString
-
 
 /**
  * @author RJ
