@@ -1,5 +1,10 @@
 # simter-id changelog
 
+## 0.8.1 - 2019-09-04
+
+- Close EntityManager after use it to avoid connection leak
+- Remove unstable dependency reactor-kotlin-extensions-1.0.0.M1
+
 ## 0.8.0 - 2019-07-07
 
 - Upgrade to simter-1.2.0
