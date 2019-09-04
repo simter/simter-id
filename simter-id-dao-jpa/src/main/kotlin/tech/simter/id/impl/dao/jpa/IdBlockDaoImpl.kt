@@ -46,6 +46,8 @@ internal class IdBlockDaoImpl @Autowired constructor(
     } catch (e: Exception) {
       em.transaction.rollback()
       throw e
+    } finally {
+      em.close()
     }
   }
 }
