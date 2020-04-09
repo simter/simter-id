@@ -1,5 +1,12 @@
 # simter-id changelog
 
+## 0.9.0 - 2020-04-09
+
+- Remove kotlin test warning
+- 更改属性 'module.authorization.simter-id' 为 'simter-id.authorization'
+- Upgrade to simter-1.3.0-M13
+
+
 ## 0.8.1 - 2019-09-04
 
 - Close EntityManager after use it to avoid connection leak
