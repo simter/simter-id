@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig
 import reactor.core.publisher.Mono
-import reactor.test.test
+import reactor.kotlin.test.test
 import tech.simter.id.OPERATION_NEXT
 import tech.simter.id.core.IdDao
 import tech.simter.id.core.IdService

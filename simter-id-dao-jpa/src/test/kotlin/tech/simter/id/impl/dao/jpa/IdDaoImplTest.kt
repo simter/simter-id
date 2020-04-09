@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig
 import reactor.core.publisher.Flux
 import reactor.core.scheduler.Schedulers
-import reactor.test.test
+import reactor.kotlin.test.test
 import tech.simter.id.core.IdDao
 import tech.simter.id.impl.dao.jpa.TestHelper.randomIdHolder
 import tech.simter.reactive.jpa.ReactiveEntityManager
