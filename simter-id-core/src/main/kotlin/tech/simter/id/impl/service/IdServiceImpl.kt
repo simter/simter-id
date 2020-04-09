@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono
+import tech.simter.id.AUTHORIZER_KEY
 import tech.simter.id.OPERATION_NEXT
-import tech.simter.id.PACKAGE
 import tech.simter.id.core.IdDao
 import tech.simter.id.core.IdService
 import tech.simter.reactive.security.ModuleAuthorizer
@@ -17,7 +17,7 @@ import tech.simter.reactive.security.ModuleAuthorizer
  */
 @Service
 class IdServiceImpl @Autowired constructor(
-  @Qualifier("$PACKAGE.service.ModuleAuthorizer")
+  @Qualifier("$AUTHORIZER_KEY.authorizer")
   private val moduleAuthorizer: ModuleAuthorizer,
   private val dao: IdDao
 ) : IdService {
