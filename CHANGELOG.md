@@ -1,5 +1,9 @@
 # simter-id changelog
 
+## 0.10.0 - 2020-04-17
+
+- Upgrade to simter-1.3.0-M14
+
 ## 0.9.0 - 2020-04-09
 
 - Remove kotlin test warning
