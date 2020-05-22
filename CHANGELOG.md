@@ -1,5 +1,9 @@
 # simter-id changelog
 
+## 0.11.0 - 2020-05-22
+
+- Upgrade to simter-1.3.0-M15
+
 ## 0.10.0 - 2020-04-17
 
 - Upgrade to simter-1.3.0-M14
