@@ -46,6 +46,8 @@
     </license>
   </licenses>
   <scm>
+    <connection>scm:git:git://github.com/simter/simter-id.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/simter/simter-id.git</developerConnection>
     <url>https://github.com/simter/simter-id.git</url>
   </scm>
   <organization>
