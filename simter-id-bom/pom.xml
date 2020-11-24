@@ -20,17 +20,22 @@
       </dependency>
       <dependency>
         <groupId>tech.simter.id</groupId>
+        <artifactId>simter-id-test</artifactId>
+        <version>${simter-id.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>tech.simter.id</groupId>
+        <artifactId>simter-id-dao-jpa</artifactId>
+        <version>${simter-id.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>tech.simter.id</groupId>
         <artifactId>simter-id-dao-mongo</artifactId>
         <version>${simter-id.version}</version>
       </dependency>
       <dependency>
         <groupId>tech.simter.id</groupId>
         <artifactId>simter-id-dao-r2dbc</artifactId>
-        <version>${simter-id.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>tech.simter.id</groupId>
-        <artifactId>simter-id-dao-jpa</artifactId>
         <version>${simter-id.version}</version>
       </dependency>
       <dependency>

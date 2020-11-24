@@ -23,6 +23,7 @@
     <module>simter-id-bom</module>
     <module>simter-id-parent</module>
     <module>simter-id-core</module>
+    <module>simter-id-test</module>
     <module>simter-id-dao-jpa</module>
   </modules>
   <build>
