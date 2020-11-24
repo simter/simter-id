@@ -1,5 +1,12 @@
 # simter-id changelog
 
+## 0.12.0 - 2020-11-24
+
+- Upgrade to simter-2.0.0
+- First stable version (only jpa dao implementation)
+- Add module simter-id-service-impl
+- Init module simter-id-test
+
 ## 0.11.0 - 2020-05-22
 
 - Upgrade to simter-1.3.0-M15
