@@ -1,6 +1,5 @@
 package tech.simter.id.impl.service
 
-import com.ninjasquad.springmockk.MockkBean
 import io.mockk.every
 import io.mockk.verify
 import org.junit.jupiter.api.Test
@@ -23,8 +22,7 @@ import java.text.NumberFormat
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-@SpringJUnitConfig(ModuleConfiguration::class)
-@MockkBean(IdDao::class, ModuleAuthorizer::class)
+@SpringJUnitConfig(UnitTestConfiguration::class)
 class IdServiceImplTest @Autowired constructor(
   private val moduleAuthorizer: ModuleAuthorizer,
   private val dao: IdDao,
