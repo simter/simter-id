@@ -1,5 +1,9 @@
 # simter-id changelog
 
+## 0.13.0 - 2020-12-23
+
+- Upgrade to simter-3.0.0-M1 (spring-boot-2.4.1)
+
 ## 0.12.0 - 2020-11-24
 
 - Upgrade to simter-2.0.0
