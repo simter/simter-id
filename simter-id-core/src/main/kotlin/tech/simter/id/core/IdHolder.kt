@@ -1,5 +1,8 @@
 package tech.simter.id.core
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
 /**
  * The ID holder interface.
  *
@@ -12,13 +15,15 @@ interface IdHolder {
   /** The current value */
   val v: Long
 
-  /** An inner immutable [IdHolder] implementation */
-  private data class Impl(
-    override val t: String,
-    override val v: Long
-  ) : IdHolder
-
   companion object {
+    /** An inner immutable [IdHolder] implementation */
+    @Serializable
+    @SerialName("IdHolder")
+    internal data class Impl(
+      override val t: String,
+      override val v: Long
+    ) : IdHolder
+
     /** Create an immutable [IdHolder] instance */
     fun of(t: String, v: Long): IdHolder {
       return Impl(t = t, v = v)

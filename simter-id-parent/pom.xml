@@ -72,6 +72,11 @@
       <artifactId>simter-util</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <resources>
@@ -96,6 +101,8 @@
           <compilerPlugins>
             <!-- Spring support: https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support -->
             <plugin>spring</plugin>
+            <!-- Kotlin serialization support: https://github.com/Kotlin/kotlinx.serialization -->
+            <plugin>kotlinx-serialization</plugin>
           </compilerPlugins>
         </configuration>
       </plugin>
