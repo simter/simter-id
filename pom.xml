@@ -26,6 +26,7 @@
     <module>simter-id-test</module>
     <module>simter-id-service-impl</module>
     <module>simter-id-dao-jpa</module>
+    <module>simter-id-dao-r2dbc</module>
   </modules>
   <build>
     <plugins>
