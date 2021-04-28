@@ -1,5 +1,7 @@
 package tech.simter.id.impl.dao.jpa.po
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 import tech.simter.id.TABLE_ID
 import tech.simter.id.core.IdHolder
 import javax.persistence.Column
@@ -14,6 +16,8 @@ import javax.persistence.Table
  */
 @Entity
 @Table(name = TABLE_ID)
+@Serializable
+@SerialName("IdHolderPo")
 data class IdHolderPo(
   @Id
   @Column(length = 100)

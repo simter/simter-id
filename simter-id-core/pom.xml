@@ -11,6 +11,21 @@
   <artifactId>simter-id-core</artifactId>
   <packaging>jar</packaging>
   <description>Core API</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-serialization-json</artifactId>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>tech.simter</groupId>
+      <artifactId>simter-kotlin</artifactId>
+    </dependency>
+  </dependencies>
   <url>https://github.com/simter/simter-id/tree/master/simter-id-core</url>
   <scm>
     <url>https://github.com/simter/simter-id.git</url>
