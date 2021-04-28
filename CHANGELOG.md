@@ -1,5 +1,12 @@
 # simter-id changelog
 
+## 0.14.0 - 2021-04-28
+
+- Upgrade to simter-3.0.0-M2 (spring-boot-2.4.5)
+- Upgrade code to use kotlinx-serialization
+- Add Transactional annotation to service method
+- Implements dao.nextLong by r2dbc
+
 ## 0.13.0 - 2020-12-23
 
 - Upgrade to simter-3.0.0-M1 (spring-boot-2.4.1)
