@@ -39,10 +39,10 @@ Simter ID Manager.
 ## Requirement
 
 - Maven 3.6+
-- Kotlin 1.4+
+- Kotlin 1.5+
 - Java 8+
 - Spring Framework 5.3+
-- Spring Boot 2.4+
+- Spring Boot 2.5+
 - Reactor 3.4+
 
 
