@@ -1,5 +1,10 @@
 # simter-id changelog
 
+## 2.0.0-M3 - 2021-08-04
+
+- Upgrade to simter-3.0.0-M3 (spring-boot-2.5.3)
+- Upgrade to new database init config
+
 ## 0.14.0 - 2021-04-28
 
 - Upgrade to simter-3.0.0-M2 (spring-boot-2.4.5)
