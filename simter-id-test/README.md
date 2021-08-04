@@ -34,12 +34,12 @@ Want to run the integration test on the real server, just add specific param:
 
 | ParamName  | Remark         | Default value
 |------------|----------------|---------------
-| server-url | server address | http://127.0.0.1:8087/id
+| server.url | server address | http://127.0.0.1:8087/id
 
 Such as:
 
 ```shell
-$ mvn clean test -P integration-test -D server-url=http://127.0.0.1:8087/id
+$ mvn clean test -P integration-test -D server.url=http://127.0.0.1:8087/id
 ```
 
 

@@ -43,7 +43,7 @@
     </dependency>
   </dependencies>
   <properties>
-    <server-url>http://localhost:808?/id</server-url>
+    <server.url>http://localhost:808?/id</server.url>
   </properties>
   <build>
     <plugins>
