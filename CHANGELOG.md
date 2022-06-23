@@ -1,5 +1,11 @@
 # simter-id changelog
 
+## 0.16.0 - 2022-06-23
+
+- Upgrade to simter-3.0.0 (spring-boot-2.7.0 and Java-17)
+- Set to no r2dbc-pool config by default
+- Remove unnecessary @JvmField annotation
+
 ## 0.15.0 - 2021-08-04
 
 - Upgrade to simter-3.0.0-M3 (spring-boot-2.5.3)
