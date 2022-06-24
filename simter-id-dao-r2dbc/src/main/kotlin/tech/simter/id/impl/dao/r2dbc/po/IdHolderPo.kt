@@ -12,7 +12,7 @@ import tech.simter.id.core.IdHolder
 @Serializable
 @SerialName("IdHolderPo")
 data class IdHolderPo(
-  @Id @JvmField
+  @Id
   override val t: String,
   override val v: Long
 ) : IdHolder, Persistable<String> {
