@@ -22,28 +22,28 @@ Simter ID Manager.
 
 ## Maven Modules
 
-| Sn | Name                   | Type | Parent           | Remark
-|----|------------------------|------|------------------|--------
-| 1  | [simter-id]            | pom  | [simter-dependencies] | Build these modules and define global properties and pluginManagement
-| 2  | simter-id-bom          | pom  | simter-id        | Bom
-| 3  | simter-id-parent       | pom  | simter-id        | Define global dependencies and plugins
-| 4  | simter-id-core         | jar  | simter-id-parent | Core API: [IdHolder], [IdDao] and [IdService]
-| 5  | simter-id-test         | jar  | simter-id-parent | Common unit test helper method
-| 6  | simter-id-dao-jpa      | jar  | simter-id-parent | [IdDao] Implementation By R2DBC
-| 7  | simter-id-dao-mongo    | jar  | simter-id-parent | [IdDao] Implementation By Reactive MongoDB
-| 8  | simter-id-dao-r2dbc    | jar  | simter-id-parent | [IdDao] Implementation By R2DBC
-| 9  | simter-id-service-impl | jar  | simter-id-parent | Default [IdService] Implementation
-| 10 | simter-id-rest-webflux | jar  | simter-id-parent | [IdDao] Implementation By JPA
-| 11 | simter-id-starter      | jar  | simter-id-parent | Microservice Starter
+| Sn  | Name                   | Type | Parent                | Remark                                                                |
+|-----|------------------------|------|-----------------------|-----------------------------------------------------------------------|
+| 1   | [simter-id]            | pom  | [simter-dependencies] | Build these modules and define global properties and pluginManagement |
+| 2   | simter-id-bom          | pom  | simter-id             | Bom                                                                   |
+| 3   | simter-id-parent       | pom  | simter-id             | Define global dependencies and plugins                                |
+| 4   | simter-id-core         | jar  | simter-id-parent      | Core API: [IdHolder], [IdDao] and [IdService]                         |
+| 5   | simter-id-test         | jar  | simter-id-parent      | Common unit test helper method                                        |
+| 6   | simter-id-dao-jpa      | jar  | simter-id-parent      | [IdDao] Implementation By R2DBC                                       |
+| 7   | simter-id-dao-mongo    | jar  | simter-id-parent      | [IdDao] Implementation By Reactive MongoDB                            |
+| 8   | simter-id-dao-r2dbc    | jar  | simter-id-parent      | [IdDao] Implementation By R2DBC                                       |
+| 9   | simter-id-service-impl | jar  | simter-id-parent      | Default [IdService] Implementation                                    |
+| 10  | simter-id-rest-webflux | jar  | simter-id-parent      | [IdDao] Implementation By JPA                                         |
+| 11  | simter-id-starter      | jar  | simter-id-parent      | Microservice Starter                                                  |
 
 ## Requirement
 
-- Maven 3.6+
-- Kotlin 1.5+
-- Java 8+
-- Spring Framework 5.3+
-- Spring Boot 2.5+
-- Reactor 3.4+
+- Java 17+
+- Maven 3.8+
+- Spring Boot 2.7+
+    - Spring Framework 5.3+
+    - Kotlin 1.6+
+    - Reactor 3.4+
 
 
 [simter-dependencies]: https://github.com/simter/simter-dependencies
